@@ -58,7 +58,7 @@ Copy the same thing to the description group.
 ![img_7](https://github.com/Boluti/EC2_instance/assets/145682024/afd375c4-7e76-4eee-bcbd-db50067d10cd)
 
 ## Gitbash deployment nginx step
-1. $ cd .ssh : To locate the pem folder in .ssh
+1. $ cd .ssh : To open the directory in .ssh
 2. $ chmod 400 tech254.pem : Used to change mode; change permissions
 3. Open your connect to instance page, select SSH client. Copy the ubuntu command and type $ ssh -i "tech254.pem"link(starting from ubuntu)
 confirming the identity. Press enter
@@ -66,13 +66,22 @@ confirming the identity. Press enter
  ubuntu@ip-172-31-53-162:~$
 
 5.  To check that you are in the right gitbash and you are now using linux,
-type $ ls then $uname
-ubuntu@ip-172-31-53-162:~$ uname
+type $ ls then $uname 
+Result: ubuntu@ip-172-31-53-162:~$ uname
 Linux
 ubuntu@ip-172-31-53-162:~$
 
 6. $ sudo apt update : finds the apps that need to be updated. 
 7. $ sudo apt upgrade -y : Implements the updates, and ensures the latest version are installed. 
-8. $ sudo apt install nginx -y
-9. $ sudo systemct1 start nginx
-10. $ sudo systemct1 status
+8. $ sudo apt install nginx -y : The command "sudo apt install nginx -y" is used to install the Nginx web server on an Ubuntu system.
+   -Sudo: The "sudo" command is used to execute the subsequent command with administrative or root privileges. It allows the user to perform system-level tasks that require elevated permissions.
+
+- Apt: "apt" stands for Advanced Package Tool and is a package management command-line tool used in Ubuntu and Debian-based systems. It is used to handle software packages, including installation, removal, and updates.
+
+- Install: The "install" command is used with apt to install new software packages onto the system.
+
+-Nginx: "nginx" is a popular open-source web server and reverse proxy server. It is known for its high performance, scalability, and ability to handle concurrent connections efficiently.
+
+ -y: The "-y" flag is used to automatically answer "yes" to any prompts or confirmations
+10. $ sudo systemct1 start nginx : This command will start the Nginx web server and make it accessible on the specified port (usually port 80).
+11. $ sudo systemct1 status : It checks the status of the Nginx web server. 
