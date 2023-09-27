@@ -83,5 +83,6 @@ ubuntu@ip-172-31-53-162:~$
 -Nginx: "nginx" is a popular open-source web server and reverse proxy server. It is known for its high performance, scalability, and ability to handle concurrent connections efficiently.
 
  -y: The "-y" flag is used to automatically answer "yes" to any prompts or confirmations
-10. $ sudo systemct1 start nginx : This command will start the Nginx web server and make it accessible on the specified port (usually port 80).
-11. $ sudo systemct1 status : It checks the status of the Nginx web server. 
+ 
+9. $ sudo systemct1 start nginx : This command will start the Nginx web server and make it accessible on the specified port (usually port 80).
+10. $ sudo systemct1 status : It checks the status of the Nginx web server. 
